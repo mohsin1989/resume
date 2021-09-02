@@ -23,6 +23,11 @@
           border-width: 0;
           font-size: medium;
       }
+        @media (max-width: 37.5em){
+        .responsive {
+          font-size:smaller;
+        }
+    }
     </style>
     <!-- Put here your site title -->
     <title>Keluarga Haji Hasanuddin</title>
@@ -53,7 +58,7 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Assalamulaikum, selamat datang ke galeri <span class="text-color-main">#hajihasanuddinfamily</span>.
+          Assalamulaikum, selamat datang ke galeri <br><span class="text-color-main responsive">#hajihasanuddinfamily</span>.
           <br />
           Selamat berkenalan.
         </h1>
@@ -69,7 +74,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">#hajihasanuddinfamily</h2>
+        <h2 class="section-title"><span class="responsive">#hajihasanuddinfamily</span></h2>
         <div class="row about-wrapper">
           <div class="col-md-12 col-sm-12">
             <div class="about-wrapper__image">
@@ -501,7 +506,7 @@
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:mohsin.hasanuddin@gmail.com"
-            >mohsin.hasanuddin@gmail.com</a
+            ><span class="responsive">mohsin.hasanuddin@gmail.com</span></a
           >
         </div>
       </div>
