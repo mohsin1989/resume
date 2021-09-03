@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 h1 {
   font-weight: 700;
@@ -6,8 +6,20 @@ h1 {
 
 p,
 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;
+}
+
+p, 
+ul,
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  padding-left: 10px;
+  list-style-position: outside;
 }
 
 a,
@@ -30,7 +42,7 @@ a:hover {
   text-transform: uppercase;
 
   @include respond(phone) {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -39,7 +51,13 @@ a:hover {
 }
 
 .text-color-main {
-  @include supportColorForIE11();
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   // Responsive text purple style
   @include respond(phone) {
